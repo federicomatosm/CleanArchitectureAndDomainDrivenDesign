@@ -1,0 +1,86 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CleanArchitecture.Domain\CleanArchitecture.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Contracts\" />
+    <None Remove="Features\" />
+    <None Remove="Behaviours\" />
+    <None Remove="Contracts\Persintence\" />
+    <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="FluentValidation" />
+    <None Remove="FluentValidation.DependencyInjectionExtensions" />
+    <None Remove="AutoMapper" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Microsoft.Extensions.Logging.Abstractions" />
+    <None Remove="Contracts\Infrastructure\" />
+    <None Remove="Models\" />
+    <None Remove="Features\Videos\" />
+    <None Remove="Features\Videos\Commands\" />
+    <None Remove="Features\Videos\Queries\" />
+    <None Remove="Features\Videos\Queries\GetVideosList\" />
+    <None Remove="Mappings\" />
+    <None Remove="Features\Streamers\" />
+    <None Remove="Features\Streamers\Queries\" />
+    <None Remove="Features\Streamers\Commands\" />
+    <None Remove="Features\Streamers\Commands\CreateStreamer\" />
+    <None Remove="Features\Streamers\Commands\UpdateStreamer\" />
+    <None Remove="Exceptions\" />
+    <None Remove="Features\Streamers\Commands\DeleteStreamer\" />
+    <None Remove="MediatR" />
+    <None Remove="Models\Identity\" />
+    <None Remove="Contracts\Identity\" />
+    <None Remove="Constants\" />
+    <None Remove="Features\Directors\" />
+    <None Remove="Features\Directors\Commands\" />
+    <None Remove="Features\Queries\" />
+    <None Remove="Features\Directors\Commands\CreateDirector\" />
+    <None Remove="Features\Directors\Commands\UpdateDirector\" />
+    <None Remove="Features\Directors\Commands\DeleteDirector\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Contracts\" />
+    <Folder Include="Features\" />
+    <Folder Include="Behaviours\" />
+    <Folder Include="Contracts\Persintence\" />
+    <Folder Include="Contracts\Infrastructure\" />
+    <Folder Include="Models\" />
+    <Folder Include="Features\Videos\" />
+    <Folder Include="Features\Videos\Commands\" />
+    <Folder Include="Features\Videos\Queries\" />
+    <Folder Include="Features\Videos\Queries\GetVideosList\" />
+    <Folder Include="Mappings\" />
+    <Folder Include="Features\Streamers\" />
+    <Folder Include="Features\Streamers\Queries\" />
+    <Folder Include="Features\Streamers\Commands\" />
+    <Folder Include="Features\Streamers\Commands\CreateStreamer\" />
+    <Folder Include="Features\Streamers\Commands\UpdateStreamer\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Features\Streamers\Commands\DeleteStreamer\" />
+    <Folder Include="Models\Identity\" />
+    <Folder Include="Contracts\Identity\" />
+    <Folder Include="Constants\" />
+    <Folder Include="Features\Directors\" />
+    <Folder Include="Features\Directors\Commands\" />
+    <Folder Include="Features\Queries\" />
+    <Folder Include="Features\Directors\Commands\CreateDirector\" />
+    <Folder Include="Features\Directors\Commands\UpdateDirector\" />
+    <Folder Include="Features\Directors\Commands\DeleteDirector\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="FluentValidation" Version="10.3.6" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.3.6" />
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+  </ItemGroup>
+</Project>

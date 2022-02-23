@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CleanArchitecture.Application\CleanArchitecture.Application.csproj" />
+    <ProjectReference Include="..\CleanArchitecture.Infrastructure\CleanArchitecture.Infrastructure.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="xunit" />
+    <None Remove="xunit.runner.visualstudio" />
+    <None Remove="Microsoft.NET.Test.Sdk" />
+    <None Remove="Moq" />
+    <None Remove="AutoFixture" />
+    <None Remove="Feature\" />
+    <None Remove="Mocks\" />
+    <None Remove="Features\Video\" />
+    <None Remove="Features\Video\Commands\" />
+    <None Remove="Features\Video\Queries\" />
+    <None Remove="Shouldly" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Microsoft.EntityFrameworkCore.InMemory" />
+    <None Remove="Features\Streamers\" />
+    <None Remove="Features\Streamers\CreateStreamer\" />
+    <None Remove="Features\Streamers\UpdateStreamer\" />
+    <None Remove="Features\Streamers\DeleteStreamer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+    <PackageReference Include="Moq" Version="4.16.1" />
+    <PackageReference Include="AutoFixture" Version="4.17.0" />
+    <PackageReference Include="Shouldly" Version="4.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\" />
+    <Folder Include="Mocks\" />
+    <Folder Include="Features\Video\" />
+    <Folder Include="Features\Video\Commands\" />
+    <Folder Include="Features\Video\Queries\" />
+    <Folder Include="Features\Streamers\" />
+    <Folder Include="Features\Streamers\CreateStreamer\" />
+    <Folder Include="Features\Streamers\UpdateStreamer\" />
+    <Folder Include="Features\Streamers\DeleteStreamer\" />
+  </ItemGroup>
+</Project>
